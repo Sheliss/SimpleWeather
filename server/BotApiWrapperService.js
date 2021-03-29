@@ -4,7 +4,7 @@ const token = 'BOT_TOKEN_HERE';
 
 const bot = new TelegramBot(token, {polling: true});
 
-const chatIdHardcode = '339913854';
+const chatIdHardcode = 'CHAT_ID_HERE';
 
 module.exports.sendCurrentWeather = weatherData => {
     bot.sendMessage(chatIdHardcode, weatherData.name + ', ' + weatherData.sys.country + '\n' + 
